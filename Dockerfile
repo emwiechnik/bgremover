@@ -21,4 +21,4 @@ COPY --from=builder /opt/conda /opt/conda
 ENV PATH=/opt/conda/bin:$PATH
 
 WORKDIR /tmp
-ENTRYPOINT ["python", "-m", "backgroundremover.cmd.cli"]
+ENTRYPOINT ["python", "-m", "backgroundremover.cmd.server"]
